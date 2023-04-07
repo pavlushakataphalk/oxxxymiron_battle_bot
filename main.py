@@ -75,6 +75,8 @@ async def rap(query: types.CallbackQuery):
         await query.message.answer_sticker(stickerpack[i])
         i = i+1
 
+    await asyncio.sleep(2.5)
+    await query.message.answer_sticker(r'CAACAgIAAxkBAAEIfqxkMDe93f5oiPqMbh0vea4iDMs3xgACwxIAAjT4gEgX7geJP3zxZC8E')
     await query.message.answer("Вы готовы?", reply_markup=mykb)
 
 
